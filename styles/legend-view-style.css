@@ -1,0 +1,136 @@
+.legends-background {
+    background-color: rgb(17, 17, 17);
+}
+
+.legend-panels-holder {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100vh;
+}
+
+.legend-description-panel {
+    background-color: rgb(0,0,0);
+    flex: 3;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left-color: white;
+}
+
+.legend-image-panel {
+    min-width: 350px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left-color: rgb(169, 1, 1);
+    border-right-color: rgb(169, 1, 1);
+    border-width: 12px;
+    flex:  2;
+}
+
+.legend-description-grid {
+    min-width: 500px;
+    padding: 100px;
+    display: grid;
+    grid-template-rows: 75px 80px 70px auto;
+    color: white;
+}
+
+.legend-name {
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.legend-description {
+    width: 340px;
+}
+
+.legend-ability-title {
+    margin-top: 25px;
+    font-size: 32px;
+}
+
+.legend-abilities div{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.legend-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (max-width: 800px) {
+    .legend-panels-holder {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        margin: 0;
+    }
+    .legend-description-panel {
+        background-color: rgb(0,0,0);
+        flex: 1;
+        border-style: solid;
+        border-top-color: white;
+        border-top-width: 1px;
+        border-bottom: none;
+        border-left: none;
+    }
+    .legend-description-grid {
+        min-width: 0;
+        padding: 50px;
+        display: grid;
+        grid-template-rows: 75px 80px 70px auto;
+        color: white;
+    }
+    
+    .legend-name {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .legend-description {
+        width: auto;
+        text-align: center;
+    }
+    
+    .legend-ability-title {
+        margin-top: 0px;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .legend-abilities div{
+        margin-left: 45px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    
+    .legend-image-panel {
+        width: 30%;
+        min-width: 0;
+        height: 2px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(0, 0, 0, 0.70);
+        border-style: solid;
+        border-top: none;
+        border-bottom: none;
+        border-left-color: rgb(169, 1, 1);
+        border-right-color: rgb(169, 1, 1);
+        border-width: 12px;
+        flex:  1;
+    }
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About us</title>
+    <link rel = "stylesheet" href = "styles/adex-header.css">
+    <link rel = "stylesheet" href = "styles/general.css">
+    <link rel = "stylesheet" href = "styles/aboutus-styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class = "headerss" >
+            <div class = "burger-menu" onclick="toggleBurgerMenu()">
+                 <div>
+                     <img class = "burger-menu-icon" src = "Source IMG/burger-menu.png">
+                 </div>
+                 <div class = "burger-menu-dropdown" id = "toggle">
+                    <a href="legendsPage.html"><div class= "option">Legends</div></a>
+                    <a href = "maps.html"><div class= "option">Maps</div></a>
+                    <a href = "aboutus.html"><div class= "option">About Us</div></a>
+                 </div>
+            </div>
+            <div class = "Logo">
+                ADEX LEGENDS
+            </div>
+            <div class = "header-right-menu">
+                    <div class = "home-icon">
+                        <a href = "home.html"> 
+                        <img class = "home-icon-image" src = "Source IMG/home-image.png">
+                        </a>        
+                    </div>
+                 
+                <a href = "signin.html">
+                    <div class = "signin-icon">
+                        <a href = "signin.html">
+                            <img class = "signin-icon-image" src = "Source IMG/—Pngtree—avatar icon profile icon member_5247852.png">
+                        </a>
+                    </div>
+                </a>
+                <div class = "home"><a class = "home-button-header" href="home.html">Home</a></div>
+                <div class = "explore">
+                    <div>Explore</div>
+                    <div class = "explore-dropdown">
+                        <a href="legendsPage.html"><div class= "option">Legends</div></a>
+                        <a href = "maps.html"><div class= "option">Maps</div></a>
+                        <a href = "aboutus.html"><div class= "option">About Us</div></a>
+                    </div>
+                </div>
+                <div class = "signin"><a class = "signin-button-header" href="signin.html">Sign in</a></div>
+            </div>
+        </div>
+    </header>
+
+    <!--Landing page for about us page-->
+    <div class = "aboutus-landing-images">
+        <div>
+            <img class = "aboutus-landing-image" src = "Source IMG/ABOUTUS/olympus-adex-legends.jpg">
+        </div>
+        <div>
+            <img class = "aboutus-landing-image" src = "Source IMG/ABOUTUS/ARENAS.png">
+        </div>
+        <div class = "aboutus-landing-gamemodes"> <!-- Divide flex into 3 parts-->
+            <div class = "aboutus-landing-gamemodes-divide">
+                <div class = "divide-component"> <!-- Each div divided into its own parts-->
+                    <div class = "divide-gamemode-desc">
+                        Fight in a team against other players until the last team.
+                    </div>
+                    <div onclick= "scrollToTargetSh('#br');" class = "divide-button-holder">
+                        <button class = "divide-button"> BATTLE ROYALE </button>
+                    </div>
+                    <div class = "divide-view-map">
+                        <a href = "maps.html">VIEW MAPS</a>
+                    </div>
+                </div>
+                <div class = "divide-component-center">
+                    <div class = "divide-middle-text-container">
+                        <div class = "about-us-text">ABOUT US </div>
+                        <div class = "gamemodes-text">GAMEMODES</div>
+                    </div>
+                </div>
+                <div class = "divide-component">
+                    <div class = "divide-gamemode-desc">
+                        Fight in a team of  against another team in a round based 3v3.
+                    </div>
+                    <div onclick= "scrollToTargetSh('#ar');" class = "divide-button-holder">
+                        <button class = "divide-button"> ARENAS </button>
+                    </div>
+                    <div class = "divide-view-map">
+                        <a href = "maps.html">VIEW MAPS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BATTLE ROYALE GAMEMODE-->
+    <div class = "gamemode-intro" id ="#br">
+
+        <div class = "gamemode-image-container">
+            <img class = "gamemode-image" src = "Source IMG/ABOUTUS/olympus-adex-legends.jpg">
+        </div>
+
+        <div class = "gamemode-title" >
+            BATTLE ROYALE  
+        </div>
+        <div class = "gamemode-description"> Fight other teams till&#39; the last team standing. 
+            Grab and Share supplies with your teammates and win the match. Move and Think as fast as possible, 
+            as the safe zone of the map shrinks over time, increasing the chance of encounter with enemy teams.</div>
+    </div>
+
+    <!-- BATTLE ROYALE ALL GAMEPLAY FLOW -->
+    <div class = "gamemode-flow">
+
+        <div class = "gamemode-flow-title">
+            GAMEPLAY FLOW
+        </div>
+
+        <!-- GAMEPLAY FLOW CARDS -->
+
+        <!-- Drop-->
+        <div class = "gameplay-flow-left">
+            <div class = "gameplay-flow-texts">
+                <div class = "gameplay-flow-texts-container">
+                    <div class = "gameplay-flow-title">
+                        LANDING
+                    </div>
+                    <div class = "gameplay-flow-description">
+                        Choose any location on the map to land. Maneuver your parachute to your destination
+                    </div>                    
+                </div>
+            </div>
+            <div class = "gameplay-flow-image">
+                    <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_LANDING.PNG">
+            </div>
+        </div>
+
+        <!-- Gather supplies-->
+        <div class = "gameplay-flow-left">
+            <div class = "gameplay-flow-image">
+                    <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_GATHERSUPPLY.PNG">
+            </div>
+            <div class = "gameplay-flow-texts">
+                <div class = "gameplay-flow-texts-container">
+                    <div class = "gameplay-flow-title">
+                        GATHER SUPPLIES
+                    </div>
+                    <div class = "gameplay-flow-description">
+                        Supplies can be found in many locations. Some locations have better loot than others. 
+                        Supplies heavily influence the success rate of your team.
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Upgrade your supplies-->
+        <div class = "gameplay-flow-left">
+            <div class = "gameplay-flow-texts">
+                <div class = "gameplay-flow-texts-container">
+                    <div class = "gameplay-flow-title">
+                        UPGRADE YOUR SUPPLIES
+                    </div>
+                    <div class = "gameplay-flow-description">
+                        Higher tier gears, weapons, 
+                        and supplies are also available on high tier loot locations 
+                        and the chance gets higher as the game goes. 
+                    </div>                    
+                </div>
+            </div>
+            <div class = "gameplay-flow-image">
+                    <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_UPGRADESUPPLY.PNG">
+            </div>
+        </div>
+
+        <!-- DEFEAT ENEMY TEAMS-->
+        <div class = "gameplay-flow-left">
+            <div class = "gameplay-flow-texts">
+                <div class = "gameplay-flow-texts-container">
+                    <div class = "gameplay-flow-title">
+                        DEFEAT ENEMY TEAMS
+                    </div>
+                    <div class = "gameplay-flow-description">
+                        Using your collected weapon and supplies, defeat enemy teams. 
+                    </div>                    
+                </div>
+            </div>
+            <div class = "gameplay-flow-image">
+                    <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_DEFEATENEMY.jpg">
+            </div>
+        </div>
+
+        <!-- Stay in the safe zone-->
+        <div class = "gameplay-flow-left">
+            <div class = "gameplay-flow-image">
+                    <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_AVOIDDANGERZONE.jpg">
+            </div>
+            <div class = "gameplay-flow-texts">
+                <div class = "gameplay-flow-texts-container">
+                    <div class = "gameplay-flow-title">
+                        STAY IN THE SAFE ZONE
+                    </div>
+                    <div class = "gameplay-flow-description">
+                        The safe zone will gradually shrink throughout the game. Be careful not to stay outside 
+                        the safe zone for too long, as it will damage you over time.
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Victory -->
+        <div class = "gameplay-flow-left">
+            <div class = "gameplay-flow-texts">
+                <div class = "gameplay-flow-texts-container">
+                    <div class = "gameplay-flow-title">
+                        VICTORY
+                    </div>
+                    <div class = "gameplay-flow-description">
+                        Defeat the final enemy team and victory will be yours!
+                    </div>                    
+                </div>
+            </div>
+            <div class = "gameplay-flow-image">
+                    <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_VICTORY.PNG">
+            </div>
+        </div> 
+
+    </div>
+
+        <!-- ARENAS GAMEMODE-->
+        <div class = "gamemode-intro" id ="#ar">
+
+            <div class = "gamemode-image-container">
+                <img class = "gamemode-image" src = "Source IMG/ABOUTUS/ARENAS.png">
+            </div>
+    
+            <div class = "gamemode-title">
+                ARENAS   
+            </div>
+            <div class = "gamemode-description"> 
+                Defeat the opposing team in a 3v3 round based gamemode. 
+                The team with most wins will be the ultimate victor.</div>
+        </div>
+
+   <!-- ARENAS ALL GAMEPLAY FLOW -->
+   <div class = "gamemode-flow-arenas">
+
+    <div class = "gamemode-flow-title">
+        GAMEPLAY FLOW
+    </div>
+
+    <!-- GAMEPLAY FLOW CARDS -->
+
+    <!-- Buy Equipment -->
+    <div class = "gameplay-flow-left">
+        <div class = "gameplay-flow-texts">
+            <div class = "gameplay-flow-texts-container">
+                <div class = "gameplay-flow-title">
+                    BUY EQUIPMENT
+                </div>
+                <div class = "gameplay-flow-description">
+                    Purchase equipment from the shop before the buy time ends. 
+                    Use this time to plan and prepare yourselves.
+                </div>                    
+            </div>
+        </div>
+        <div class = "gameplay-flow-image">
+                <img class = "flow-image-container" src = "Source IMG/ABOUTUS/ARENAS_BUY.png">
+        </div>
+    </div>
+
+    <!-- Eliminate the enemy team-->
+    <div class = "gameplay-flow-left">
+        <div class = "gameplay-flow-image">
+                <img class = "flow-image-container" src = "Source IMG/ABOUTUS/ARENAS_DEFEAT.jpg">
+        </div>
+        <div class = "gameplay-flow-texts">
+            <div class = "gameplay-flow-texts-container">
+                <div class = "gameplay-flow-title">
+                    ELIMINATE THE ENEMY TEAM
+                </div>
+                <div class = "gameplay-flow-description">
+                    The last team standing will be given a single point for the round.
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Upgrade your equipment-->
+    <div class = "gameplay-flow-left">
+        <div class = "gameplay-flow-texts">
+            <div class = "gameplay-flow-texts-container">
+                <div class = "gameplay-flow-title">
+                    UPGRADE YOUR EQUIPMENT
+                </div>
+                <div class = "gameplay-flow-description">
+                    If you survive the round, you get to keep every item you bought last round. 
+                    You can upgrade them to further increase your advantage.
+                </div>                    
+            </div>
+        </div>
+        <div class = "gameplay-flow-image">
+                <img class = "flow-image-container" src = "Source IMG/ABOUTUS/ARENAS_UPGRADE.jpg">
+        </div>
+    </div>
+
+    <!-- Victory -->
+    <div class = "gameplay-flow-left">
+        <div class = "gameplay-flow-texts">
+            <div class = "gameplay-flow-texts-container">
+                <div class = "gameplay-flow-title">
+                    VICTORY
+                </div>
+                <div class = "gameplay-flow-description">
+                    The team with the most score wins the game.
+                </div>                    
+            </div>
+        </div>
+        <div class = "gameplay-flow-image">
+                <img class = "flow-image-container" src = "Source IMG/ABOUTUS/BATTLEROYALE_VICTORY.PNG">
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class = "footerr" >
+            <div class = "footer-left">
+                <div class = "footer-big">
+                    Contact Us
+                </div>
+                <div class = "contact"> Phone : (021) XXXXXXXXXXX </div>
+                <div class = "contact"> Email : AdexCorp@SUNIBMAIL.com </div>
+                <div class = "contact"> FAX : 1-800-XXXXXXXXXXXXX </div>
+                <div class = "contact"> ADEX OFFICE, greenwich </div>
+            </div>
+            <div class = "footer-right">
+                <div class = "footer-big">
+                    Social Media
+                    <div class = "footer-social-media-logos">
+                        <img class = "footer-social-media" src = "Source IMG/INSTA_LOGO.png">
+                        <img class = "footer-social-media" src = "Source IMG/youtube-logo-illustration.jpg">
+                        <img class = "footer-social-media" src = "Source IMG/62399a440fbf6.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+<script src = "JavaScript/toggleBurgerMenu.js"></script>
+<script src = "JavaScript/aboutus-scroll.js"></script>
+
+</html>

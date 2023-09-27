@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+.legends-background {
+    margin-top: 125px;
+    margin-bottom: 75px;
+    width: 100%;
+    height: 100vh;
+    display: grid; 
+    grid-template-rows: 1fr 2fr auto;
+    padding-bottom: 25px;
+}
+
+.legends-background-title, .legends-background-description {
+    color: white;
+}
+
+.legends-background-title {
+    text-align: center;
+    font-size : 38px;
+}
+
+.legends-background-description {
+    font-size: 24px;
+    width: 560px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legends-list { 
+    margin-top: 75px;
+    background-color: rgb(154, 58, 58);
+}
+
+.legend-card-container {
+    margin-left: 70px;
+    margin-right: 70px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+}
+
+.legend-card {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 225px;
+    background-color: rgb(212, 212, 212);
+    transition: box-shadow 0.15s;
+}
+
+.legend-card-image {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.legend-card:hover {
+    box-shadow: 0px 0px 15px rgb(255, 0, 0);
+}
+
+.legend-card:hover .legend-card-name {
+    background-color: rgba(255, 0, 0, 0.5);
+    width: auto;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 50%;
+    font-size: 24px;
+}
+
+.legend-card:active .legend-card-name{
+    background-color: rgba(245, 115, 115, 0.5);
+}
+
+.legend-card-name {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: red;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    pointer-events: none;
+    transition: all 0.15s;
+}
+
+@media (max-width: 800px) {
+    .legends-background {
+        margin-top: 125px;
+        margin-bottom: 45px;
+        height: 100vh;
+        display: grid; 
+        grid-template-rows: 1fr 1fr auto;
+        padding-bottom: 100vh;
+    }
+    .legend-card-container {
+        margin-left: 25px;
+        margin-right: 25px;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .legend-card {
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 225px;
+        background-color: rgb(212, 212, 212);
+    }
+    
+    .legends-background-description {
+        font-size: 18px;
+        width: 350px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+}

@@ -1,0 +1,161 @@
+
+.sign-in-page {
+    margin-top: 55px;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.sign-in-panel {
+    background-color: rgb(17, 17, 17);
+    margin-left: 300px;
+    margin-right: 300px;
+    min-width: 750px;
+    height: 100%;
+    border-style: solid;
+    border-left-color: white;
+    border-right-color: white;
+    color: white;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    justify-content: center;
+}
+
+.error-text {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.sign-in-title-holder {
+    margin-top: 32px;
+    font-size: 24px;
+    width: 100%;
+    height: 100px;
+    width: 400px;
+    text-align: center;
+}
+
+.input-holder {
+    text-align: center;
+    font-size: 18px;
+    width: 400px;
+}
+
+.input-holder-checkbox {
+    margin-bottom: 12px;
+}
+.double-input-holder {
+    display: grid;
+    font-size: 18px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.double-input-holder .input-holder {
+    width: 100%;
+    text-align: middle;
+}
+
+.double-input-holder .input-holder input {
+    width: 80%;
+}
+
+.input-data {
+    margin-top: 12px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(217, 217, 217);
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    font-family: Jura;
+}
+
+.Select-country {
+    margin-bottom: 10px;
+}
+
+.country-choose {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 4px;
+    font-family: Jura;
+}
+
+.sign-in-button-holder {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-in-button {
+    background-color: rgb(144, 26, 26);
+    font-size: 18px;
+    font-family: Jura;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.return-home-button {
+    margin-top: 80px;
+    background-color: rgb(144, 26, 26);
+    font-size: 18px;
+    font-family: Jura;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .sign-in-panel {
+        background-color: rgb(17, 17, 17);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 180px;
+        min-width: 350px;
+        height: 100%;
+        border: none;
+        color: white;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    .double-input-holder {
+        display: grid;
+        font-size: 12px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    .input-title {
+        font-size: 15px; 
+    }
+    .input-holder {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .input-data {
+        margin-top: 4px;
+        width: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: rgb(217, 217, 217);
+        border-style: solid;
+        border: none;
+        border-radius: 5px;
+        font-family: Jura;
+    }
+
+}

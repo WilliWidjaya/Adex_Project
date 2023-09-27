@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Jura;
+    src: url("Fonts/Jura/static/Jura-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    margin-top: 56px;
+    padding: 0;
+    font-family: Jura;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
